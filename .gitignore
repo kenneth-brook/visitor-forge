@@ -1,0 +1,51 @@
+# Visitor Forge local configuration
+visitor-forge/config/config.php
+visitor-forge/config/*.local.php
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Uploaded runtime content
+visitor-forge/uploads/media/*
+visitor-forge/uploads/documents/*
+!visitor-forge/uploads/media/.gitkeep
+!visitor-forge/uploads/documents/.gitkeep
+!visitor-forge/uploads/.gitkeep
+!visitor-forge/uploads/.htaccess
+
+# Runtime logs/cache/temp
+logs/
+cache/
+tmp/
+*.log
+
+# Backups and local exports
+backups/
+db_exports/
+*.bak
+*.old
+*.orig
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependency folders if ever introduced
+vendor/
+node_modules/
+
+# Local test artifacts
+coverage/
+.phpunit.result.cache
